@@ -1,0 +1,52 @@
+
+
+body{
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+flex-direction: column;
+background-color: orange;
+}
+
+.Container{
+   
+    background-color: rgb(203, 126, 177);
+    padding: 40px;
+    width: 40vh;
+    border-radius: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.clock{
+
+color: azure;
+
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    margin: 2px;
+}
+
+.button{
+    border-radius: 50px;
+    width: 110px;
+    font-size: 30px;
+    height: 40px;
+    outline: none;
+    cursor: pointer;
+    background-color: grey;
+}
+
+.button:hover{
+     background-color: rgb(216, 166, 229);
+}
+.button:active{
+    background-color: rgb(243, 238, 242);
+    opacity: 200px;
+}
