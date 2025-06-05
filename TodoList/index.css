@@ -1,0 +1,66 @@
+
+body{
+   
+    background-color: slategray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.card{
+   
+    background-color: #2596be;
+    padding: 110px;
+    border-radius: 5%;
+    box-shadow: 0 0 3px 4px rgba(0, 0, 0, 0.2);
+    flex-direction: row;
+}
+
+.input{
+padding: 10px; 
+border-radius: 10px; 
+border-style: none;
+
+}
+
+.button{
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(37, 150, 190);
+    color: white;
+    padding: 6px;
+}
+
+.button:hover{
+   
+    background-color: #564fc1;
+    transition-delay: 100ms;
+    transition-duration: 500ms;
+
+}
+
+.deletebutton{
+    
+    border-radius: 5px;
+    margin-left: 40px;  
+    color: white;
+    background-color: red;
+    cursor: pointer;
+    border-style: none;
+}
+
+.editbutton{
+    border-radius: 5px;
+    margin-left: 40px;  
+    color: white;
+    background-color: rgb(67, 231, 116);
+    cursor: pointer;
+    border-style: none;
+    
+}
+
+.list{
+    padding: 10px;
+}
