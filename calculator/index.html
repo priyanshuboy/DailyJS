@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculator</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <div class="calculator">
+    <div class="input">
+      <input type="text" readonly />
+    </div>
+<div class="buttons">
+  <button onclick="Backspace()" class="hmm">B</button>
+  <button onclick="ClearInput()" class="hmm">AC</button>
+  <button onclick="Output('1')">1</button>
+  <button onclick="Output('2')">2</button>
+  <button onclick="Output('+')" class="hmm">+</button>
+  <button onclick="Output('3')">3</button>
+  <button onclick="Output('4')">4</button>
+  <button onclick="Output('5')">5</button>
+  <button onclick="Output('-')" class="hmm">-</button>
+  <button onclick="Output('6')">6</button>
+  <button onclick="Output('7')">7</button>
+  <button onclick="Output('8')">8</button>
+  <button onclick="Output('*')" class="hmm">*</button>
+  <button onclick="Output('9')">9</button>
+  <button onclick="Output('0')">0</button>
+  <button onclick="Calculate()" class="hmm">=</button>
+  <button onclick="Output('/')" class="hmm">/</button>
+</div>
+
+  </div>
+
+<script>
+  let value = '';
+  const inputField = document.querySelector(".input input");
+
+  function Output(char) {
+    value += char;
+    inputField.value = value;
+  }
+
+  function ClearInput() {
+    value = '';
+    inputField.value = '';
+  }
+
+  function Backspace() {
+    value = value.slice(0, -1);
+    inputField.value = value;
+  }
+
+  function Calculate() {
+    try {
+      value = eval(value).toString();
+      inputField.value = value;
+    } catch {
+      inputField.value = "Error";
+      value = '';
+    }
+  }
+</script>
+
+
+</body>
+</html>
